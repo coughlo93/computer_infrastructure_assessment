@@ -13,3 +13,8 @@ This repository contains my assesstment submission for the module Computer Infra
     Task 2 - I used date command to get the current date. 
     I then used the command i in {1..10} to start a loop that will iterate it 10 times. 
     I then added the command date >> now.txt: to retrieve the current date and >> creates a file called now.txt where the date & time is displayed 10 times.
+
+    Task 3 - Firstly I used date +"%Y%m%d_%H%M%S" to get the output.
+    I then used date +"%Y%m%d_%H%M%S" >> formatted.txt to create the text file formatted.txt
+    Finally I used cat formatted.txt to run the file to get an updated timestamp
+    
