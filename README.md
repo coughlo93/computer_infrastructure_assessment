@@ -17,4 +17,10 @@ This repository contains my assesstment submission for the module Computer Infra
     Task 3 - Firstly I used date +"%Y%m%d_%H%M%S" to get the output.
     I then used date +"%Y%m%d_%H%M%S" >> formatted.txt to create the text file formatted.txt
     Finally I used cat formatted.txt to run the file to get an updated timestamp
-    
+
+    Task 4 - I created a timestamp file using the below command
+    touch `date +"%Y%m%d_%H%M%S"`.txt
+
+    Task 5 - Checked to see was wget installed
+    wget was installed so I used the following command to download the data from the website and created a file in weather folder
+    wget https://prodapi.metweb.ie/observations/athenry/today
