@@ -23,4 +23,4 @@ This repository contains my assesstment submission for the module Computer Infra
 
     Task 5 - Checked to see was wget installed
     wget was installed so I used the following command to download the data from the website and created a file in weather folder
-    wget https://prodapi.metweb.ie/observations/athenry/today
+    wget -0 weather.json https://prodapi.metweb.ie/observations/athenry/today
