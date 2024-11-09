@@ -46,4 +46,9 @@ This repository contains my assesstment submission for the module Computer Infra
  - See all steps above.
 
    **Task 9**
- -  
+ -  I created a Jupyter Notebook and called it weather.ipynb
+ -  I used the heading Weather Analysis and imported pandas using import pandas as pd
+ -  I then put in a Collecting Data heading and put in a breif description of what the output would be.
+ -  I then used the below line of code to start analysing the data
+ -  df = pd.read_json('/workspaces/computer_infrastructure_assessment/data/weather/weather_20241109_130626.json')
+ -  Once this code was run, I was able to use df.head() to show some results
