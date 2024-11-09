@@ -29,8 +29,13 @@ This repository contains my assesstment submission for the module Computer Infra
  - Checked to see was wget installed
  - wget was installed so I used the following command to download the data from the website and created a file in weather folder
  - wget -0 weather.json https://prodapi.metweb.ie/observations/athenry/today
+
+ **Task 6**
+ - In the terminal I used the below code to add a new timestamp
+ - wget -O "weather_$(date +"%Y%m%d_%H%M%S").json" https://prodapi.metweb.ie/observations/athenry/today
+ - This created a new timestamp file in the weather folder
  
- **Task 6** 
+ **Task 7** 
  - I created a new file called weather.sh.
  - In this file I put the following code
  - #! /bin/bash
