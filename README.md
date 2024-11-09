@@ -40,4 +40,10 @@ This repository contains my assesstment submission for the module Computer Infra
  - In this file I put the following code
  - #! /bin/bash
  - wget -O data/weather/`date +"%Y%m%d_%H%M%S_weather.json"` https://prodapi.metweb.ie/observations/athenry/today
- - every time I run this code, it will create a new file in the weather folder with an updated date and time
+ - Every time I run this code, it will create a new file in the weather folder with an updated date and time
+
+   **Task 8**
+ - See all steps above.
+
+   **Task 9**
+ -  
