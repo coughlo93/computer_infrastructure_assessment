@@ -25,6 +25,6 @@ jobs:
           git commit -m "Automated weather data update [skip ci]" || echo "No changes to commit"
           
           # Use GITHUB_TOKEN for authentication when pushing back to GitHub
-          git push https://github.com/${{ github.repository }}.git HEAD:main
+          git push https://github.com/${{ computer_infrastructure_assessment }}.git HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
