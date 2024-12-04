@@ -51,3 +51,8 @@ This repository contains my assessment submission for the module Computer Infras
 - I used the following line of code to start analyzing the data:
 - df = pd.read_json('/workspaces/computer_infrastructure_assessment/data/weather/weather_20241109_130626.json')
 - Once this code was run, I used df.head() to display the initial results.
+
+# Assignment Summary
+
+- I used the following code to create a folder called .github/workflows - mkdir -p .github/workflows
+- I then used the following code to create a file within the folder called weather-data.yml - touch .github/workflows/weather-data.yml
