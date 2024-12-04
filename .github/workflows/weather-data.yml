@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-weather:
-    runs-on: ubuntu-latest  # Use a Linux VM
+    runs-on: ubuntu-22.04  # Switch to 22.04 to check if the error is related to Ubuntu 24.04
     steps:
       - name: computer_infrastructure_assessment
         uses: actions/computer_infrastructure_assessment
