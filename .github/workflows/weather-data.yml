@@ -9,25 +9,25 @@ jobs:
   update-weather:
     runs-on: ubuntu-latest  # Use a Linux VM
     steps:
-      - name: computer_infrastructure_assessment
-        uses: actions/computer_infrastructure_assessment
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Run weather.sh Script
         run: |
           chmod +x weather.sh  # Ensure the script is executable
           ./weather.sh  # Execute the script
 
-      - name: Commit and Push Changes
+      - name: Set up Git configuration
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and Push Changes
+        run: |
           git add .
           git commit -m "Automated weather data update [skip ci]" || echo "No changes to commit"
+          git push https://github.com/coughlo93/computer_infrastructure_assessment.git HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Push changes to repository
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+
 
