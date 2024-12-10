@@ -2,7 +2,7 @@ name: Weather Data Automation
 
 on:
   schedule:
-    - cron: '0 12 * * *' # Every day at 10 AM
+    - cron: '0 10 * * *' # Every day at 10 AM
   workflow_dispatch:
 
 jobs:
@@ -18,5 +18,8 @@ jobs:
 
     - name: Commit and push changes
       run: |
-
-
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add data/weather
+        git commit -m "Automated weather data update"
+        git push
