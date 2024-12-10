@@ -57,4 +57,5 @@ This repository contains my assessment submission for the module Computer Infras
 - I used the following code to create a folder called .github/workflows - mkdir -p .github/workflows
 - I then used the following code to create a file within the folder called weather-data.yml - touch .github/workflows/weather-data.yml
 - I named it Daily Weather Data Update
-- I then used - cron to get it to update every day at 10:00
+- I then used - cron to get it to update every day at 11:00
+- I then tried to run the weather job on the latest version of ubuntu
