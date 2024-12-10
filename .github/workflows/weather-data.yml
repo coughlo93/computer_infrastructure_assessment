@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: computer_infrastructure_assessment
+    - name: Checkout repository
       uses: actions/checkout@v3
 
     - name: Run weather script
