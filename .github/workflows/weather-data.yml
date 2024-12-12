@@ -1,23 +1,33 @@
-name: Weather Data Automation
+name: Automate Weather Data Collection
 
 on:
   schedule:
-    - cron: '0 10 * * *' # Every day at 10 AM
-  workflow_dispatch:
+    - cron: '0 11 * * *'  
+  workflow_dispatch: 
 
 jobs:
-  weather_job:
-    runs-on: ubuntu-latest
+  collect-weather-data:
+    runs-on: ubuntu-latest  
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v3  
 
-    - name: Run weather script
-      run: ./weather.sh
-
-    name: Commit and push changes
+    - name: Set up environment
       run: |
-        git add .
+        sudo apt-get update
+        sudo apt-get install -y curl  # Install curl if required by your script
+        chmod +x weather.sh  # Ensure weather.sh is executable
+
+    - name: Run weather.sh script
+      run: ./weather.sh  
+
+    - name: Commit and push weather data
+      run: |
+        git config --global user.name "Owen Coughlan"
+        git config --global user.email "owenc1993@gmail.com"
+        git add data/weather_data.txt
         git commit -m "Update weather data"
-        git push
+        git push origin main
+
+
