@@ -18,3 +18,7 @@ jobs:
 
     - name: Commit and push changes
       run: |
+
+git add data/weather/20241212_101844_weather.json
+git commit -m "Add weather data for 2024-12-12"
+git push origin <computer_infrastructure_assessment>
