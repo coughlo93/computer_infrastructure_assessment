@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Create a directory for weather data if it doesn't exist
-mkdir -p weather/data
+mkdir -p weather_data
 
 # Generate a unique filename based on the current date and time
 filename="weather_data/weather_$(date +'%Y-%m-%d_%H-%M-%S').txt"
