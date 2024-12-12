@@ -17,4 +17,12 @@ jobs:
       run: ./weather.sh
 
     - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
+        git config --global user.name "Owen Coughlan"
+        git config --global user.email "g00439345@atu.ie"
+        git add weather_data/
+        git commit -m "Add new weather data $(date +'%Y-%m-%d %H:%M:%S')"
+        git push origin main
+
