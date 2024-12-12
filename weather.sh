@@ -11,10 +11,10 @@ fi
 # Create a directory for weather data if it doesn't exist
 mkdir -p weather_data
 
-# Generate a unique filename based on the current date and time
+# Generating a unique filename based on date and time
 filename="weather_data/weather_$(date +'%Y-%m-%d_%H-%M-%S').txt"
 
-# Save weather data to the file
+# Saving the weather data to the file
 echo "$weather_data" > "$filename"
 
 # Print the filename for debugging/logging

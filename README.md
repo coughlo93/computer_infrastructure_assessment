@@ -59,3 +59,7 @@ This repository contains my assessment submission for the module Computer Infras
 - I named it Daily Weather Data Update
 - I then used - cron to get it to update every day at 11:00
 - I then tried to run the weather job on the latest version of ubuntu
+- I was having issues with the files not saving to the repository even though the workflow was running.
+- I then update weather.sh with mkdir -p weather_data that created a directory for weather data and that seemed to work for me
+- I generated a unique filename which was based off the current date and time of the workflow.
+- Finally I saved the data to a file using ' echo "$weather_data" > "$filename" ' 
